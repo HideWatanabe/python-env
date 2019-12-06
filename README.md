@@ -1,7 +1,7 @@
 # Instalação do ambiente Python do Wata
 ## O que iremos instalar?
-- pyenv
-- 
+- [x] pyenv
+- [x] venv
 
 ## Observações iniciais:
 - SO: Ubuntu 19.10
@@ -11,6 +11,7 @@ pyenv é uma ferramenta de gerenciamento de versão do Python, também conhecida
 
 #### Instalação do pyenv:
 ##### Pré-requisitos:
+Os pré-requisitos estão no apt abaixo:
 ```shell
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
@@ -50,6 +51,7 @@ pyenv global 3.7.5
 virtualenv é um conceito/ferramenta para gestão de ambientes por contexto. Com ele é possível isolar o contexto de determinada aplicação com relação as dependências Python do projeto.
 
 #### Pré-requisitos
+Somente o Python3
 
 #### Instalação
 ```shell
