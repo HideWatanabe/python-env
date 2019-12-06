@@ -8,9 +8,11 @@
 
 ##### Passo a passo:
 ###### 1o: Pré-requisitos:
-''' sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+```shell
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+```
 
 ###### Links:
 - [Tutorial](https://amaral.northwestern.edu/resources/guides/pyenv-tutorial)
