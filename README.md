@@ -29,7 +29,7 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 ```
-##### Comandos! =)
+#### Comandos! =)
 ```shell
 # Listagem de versões instaladas na máquina
 pyenv versions
@@ -41,6 +41,32 @@ pyenv install 3.7.5
 pyenv global 3.7.5
 ```
 
-##### Links:
+#### Links:
 - [Tutorial](https://amaral.northwestern.edu/resources/guides/pyenv-tutorial)
 - [Troubleshooting](https://github.com/pyenv/pyenv/wiki/Common-build-problems)
+
+
+### virtualenv
+virtualenv é um conceito/ferramenta para gestão de ambientes por contexto. Com ele é possível isolar o contexto de determinada aplicação com relação as dependências Python do projeto.
+
+#### Pré-requisitos
+
+#### Instalação
+```shell
+sudo apt install python3-venv
+```
+
+#### Comandos! =)
+```shell
+# Criação de contexto para determinada aplicação/pacote - Desde a versão 3.6 a execução do comando 'venv' sem estar explícito a utilização da versão 3 do Python está depreciada.
+python3 -m venv .venv
+# Ativação do ambiente isolado que criado anteriormente
+source .venv/bin/activate
+# Desativar o ambiente isolado
+deactivate
+```
+
+#### Links
+-[Utilização](https://docs.python.org/3/library/venv.html#module-venv)
+
+#####
